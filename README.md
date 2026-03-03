@@ -269,15 +269,5 @@ microFramework/
 └── pom.xml                                          # Maven configuration
 ```
 
-## Example: Math Services
-
-See `MathServices.java` for more examples:
-
-```java
-get("/pi", (req, resp) -> "PI=" + Math.PI);
-get("/Hello", (req, resp) -> "Hello World");
-get("/euler", (req, resp) -> "e=" + Math.E);
-```
-
 ## authors
 Juan Felipe Rangel Rodriguez
