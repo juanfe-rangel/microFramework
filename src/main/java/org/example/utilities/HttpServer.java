@@ -83,7 +83,6 @@ public class HttpServer {
                 }
             }
 
-            // Check if it's a registered endpoint
             WebMethod wm = endPoints.get(reqpath);
             
             if(wm != null){
@@ -162,7 +161,6 @@ public class HttpServer {
             // Build the full path to the static file
             String fullPath = classesPath + staticFilesLocation + path;
             
-            // Clean up the path (remove leading slash on Windows, decode URL encoding)
             fullPath = fullPath.replaceFirst("^/(.:/)", "$1");
             fullPath = java.net.URLDecoder.decode(fullPath, "UTF-8");
             
