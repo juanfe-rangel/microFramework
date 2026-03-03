@@ -50,7 +50,6 @@ Use the `get()` method to define REST endpoints:
 
 ```java
 get("/path", (req, resp) -> {
-    // Your handler logic here
     return "Response string";
 });
 ```
@@ -280,6 +279,5 @@ get("/Hello", (req, resp) -> "Hello World");
 get("/euler", (req, resp) -> "e=" + Math.E);
 ```
 
-## License
-
-This is an educational project for learning web framework development.
+## authors
+Juan Felipe Rangel Rodriguez
